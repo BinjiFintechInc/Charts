@@ -413,7 +413,7 @@ open class ViewPortHandler: NSObject
     
     @objc open func isInBoundsY(_ y: CGFloat) -> Bool
     {
-        return isInBoundsTop(y) && isInBoundsBottom(y)
+        return isInBoundsTop(ceil(y)) && isInBoundsBottom(y)
     }
     
     /**
